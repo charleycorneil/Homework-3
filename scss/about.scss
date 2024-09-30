@@ -1,0 +1,109 @@
+.image-area {
+  background-image: url("homeworkOneImage.jpeg");
+  height: 200px;
+  background-size: cover;
+  position: relative;
+}
+
+.image-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 0, 0.5);
+  clip-path: circle(30% at center);
+}
+
+.about-hero {
+  height: 60vh;
+  background: url("about-bg.jpg") no-repeat center center/cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-hero .hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.about-hero .hero-content p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+/* Our Story Section */
+.our-story {
+  padding: 60px 20px;
+  background-color: #f4f4f4;
+}
+
+.our-story .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.our-story p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Team Section */
+.our-team {
+  padding: 60px 20px;
+}
+
+.our-team .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-team h2 {
+  margin-bottom: 30px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
